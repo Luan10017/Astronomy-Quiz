@@ -4,8 +4,8 @@
   "description": "Teste os seus conhecimentos sobre astronomia e vamos ver quantos objetos astronômicos você conhece.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://i.pinimg.com/originals/8b/fc/6e/8bfc6ef455230ca0350680057ad4d783.gif",
+      "title": "Quantos planetas fazem parte do sistema solar?",
       "description": "Essa é pra aquecer",
       "answer": 2,
       "alternatives": [
@@ -16,9 +16,9 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://www.futurity.org/wp/wp-content/uploads/2017/09/Cassini-GIF_0.gif",
+      "title": "Qual o nome da nave que se autodestruiu em Saturno?",
+      "description": "Evento recente.",
       "answer": 0,
       "alternatives": [
          "background: linear-gradient(#e66465, #9198e5);",
