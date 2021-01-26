@@ -22,6 +22,30 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
+
+  input {
+    width: 283px;
+    height: 36px;
+    margin: 30px auto 25px;
+    padding: 8px 16px;
+    background-color: ${({theme}) => theme.colors.mainBg};
+    border: 1px solid #8D8B89;
+    border-radius: 4px;
+    color: ${({theme}) => theme.colors.contrastText};
+    opacity: 70%;
+  }
+
+  button {
+    background-color: ${({theme}) => theme.colors.secondary};
+    width: 283px;
+    height: 36px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.contrastText};
+  }
 `;
 
 Widget.Header = styled.header`
@@ -50,7 +74,7 @@ Widget.Content = styled.div`
   }
 `;
 
-Widget.Input = styled.input`
+/* Widget.Input = styled.input`
   width: 283px;
   height: 36px;
   margin: 30px auto 25px;
@@ -72,6 +96,6 @@ Widget.Button = styled.button`
   cursor: pointer;
   text-transform: uppercase;
   color: ${({ theme }) => theme.colors.contrastText};
-`;
+`; */
 
 export default Widget;
