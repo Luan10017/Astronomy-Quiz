@@ -1,5 +1,12 @@
 import React from 'react';
 
+import db from '../db.json';
+
+import Head from 'next/head';
+import Widget from '../src/components/Widget'
+import QuizLogo from '../src/components/QuizLogo'
+import QuizBackground from '../src/components/QuizBackground'
+
 export default function Quiz() {
   return (
     <QuizBackground backgroundImage={db.bg}>
