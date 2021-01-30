@@ -1,12 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
-  }};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
 
@@ -15,36 +13,11 @@ const Widget = styled.div`
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
-    color: ${({theme}) => theme.colors.secondary};
   }
   p {
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
-  }
-
-  input {
-    width: 283px;
-    height: 36px;
-    margin: 30px auto 25px;
-    padding: 8px 16px;
-    background-color: ${({theme}) => theme.colors.mainBg};
-    border: 1px solid #8D8B89;
-    border-radius: 4px;
-    color: ${({theme}) => theme.colors.contrastText};
-    opacity: 70%;
-  }
-
-  button {
-    background-color: ${({theme}) => theme.colors.secondary};
-    width: 283px;
-    height: 36px;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
-    cursor: pointer;
-    text-transform: uppercase;
-    color: ${({ theme }) => theme.colors.contrastText};
   }
 `;
 
@@ -74,28 +47,22 @@ Widget.Content = styled.div`
   }
 `;
 
-/* Widget.Input = styled.input`
-  width: 283px;
-  height: 36px;
-  margin: 30px auto 25px;
-  padding: 8px 16px;
-  background-color: ${({theme}) => theme.colors.mainBg};
-  border: 1px solid #8D8B89;
-  border-radius: 4px;
-  color: ${({theme}) => theme.colors.contrastText};
-  opacity: 70%;
-`;
-
-Widget.Button = styled.button`
-  background-color: ${({theme}) => theme.colors.secondary};
-  width: 283px;
-  height: 36px;
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
-  cursor: pointer;
-  text-transform: uppercase;
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
   color: ${({ theme }) => theme.colors.contrastText};
-`; */
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+`;
 
 export default Widget;
